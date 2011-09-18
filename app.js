@@ -24,4 +24,4 @@ require('./routes/bill')(app, db, config, dateFormat);
 require('./routes/root')(app, db, config, dateFormat);
 
 
-app.listen(4000);
+app.listen(config.port);
