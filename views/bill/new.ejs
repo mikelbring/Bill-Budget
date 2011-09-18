@@ -1,0 +1,30 @@
+
+<form method="post" action="">
+	<fieldset>
+		<legend>New Bill</legend>
+	    <div class="clearfix">
+				<label for="xlInput">Name</label>
+			<div class="input">
+				<input class="xlarge" name="name" size="30" type="text">
+			</div>
+		</div>
+		<div class="clearfix">
+			<label for="prependedInput">Amount</label>
+			<div class="input">
+				<div class="input-prepend">
+					<span class="add-on">$</span>
+					<input class="medium" name="amount" size="16" type="text">
+				</div>
+			</div>
+         </div>
+		<div class="clearfix">
+				<label for="xlInput">Date</label>
+			<div class="input">
+				<input class="xlarge datepicker" name="date" size="30" type="text">
+			</div>
+		</div>
+		<div class="actions">
+			<input type="submit" class="btn primary" value="Create Bill">&nbsp;<button type="reset" class="btn" onclick="window.location='/'">Go Back</button>
+		</div>
+	</fieldset>
+</form>

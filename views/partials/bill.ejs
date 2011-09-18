@@ -1,0 +1,18 @@
+
+<tr title="Toggle Paid"  class="toggle-bill" id="bill<%= bill.id %>" onclick="toggle_bill(<%=bill.id %>, <%= bill.paid === 1 ? 0 : 1 %>)">
+	
+	<td><%= dateFormat(bill.date, 'dd') %></td>
+	<td width="80%">
+		<strong><%= bill.name %></strong>
+		<span class="status">
+			<% if(bill.overdue){%>
+			<span class="label important">Overdue</span>
+			<% } %>
+			
+			<% if(bill.paid == 1){%>
+			<span class="label success">Paid</span>
+			<% } %>
+		</span>
+	</td>
+	<td style="text-align: right;"><%= bill.amount.toFixed(2) %></td>
+</tr>

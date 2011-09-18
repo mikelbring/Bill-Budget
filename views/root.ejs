@@ -1,0 +1,35 @@
+<div class="pagination">
+	<ul>
+		<li class="prev"><a href="/<%= previous.year %>/<%= previous.month %>">&laquo;</a></li>
+		<li class="disabled"><a href=""><%= month %></a></li>
+		<li class="next"><a href="/<%= next.year %>/<%= next.month %>">&raquo;</a></li>
+	</ul>
+</div>
+
+<table class="bills">
+	<% bills.results.forEach(function(bill){ %>
+		<%- partial('partials/bill', {
+				bill: bill,
+			 	dateFormat: dateFormat
+			}) %>
+	<% }) %>
+	
+	<tr>
+		<td colspan="2">
+			<strong>Total Overdue</strong>
+		</td>
+		<td style="text-align: right;"><%= bills.total_overdue.toFixed(2) %></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<strong>Total Paid</strong>
+		</td>
+		<td style="text-align: right;"><%= bills.total_paid.toFixed(2) %></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<strong>Total</strong>
+		</td>
+		<td style="text-align: right;"><%= bills.total.toFixed(2) %></td>
+	</tr>
+</table>

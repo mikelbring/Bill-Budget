@@ -1,0 +1,14 @@
+{
+    "name": "Bill Budget",
+    "description": "Simple monthly bill tracker",
+    "version": "0.1.0",
+    "author": "Michael Hasselbring",
+    "dependencies": {
+		'dateformat',
+		'ejs',
+		'express',
+		'mysql',
+		'node-date'
+	},
+    "devDependencies": {}
+}
