@@ -1,8 +1,0 @@
-h1 Editing #{product.name}
-form(action='/product/' + product.id, method='POST')
-  input(type='hidden', name='_method', value='PUT')
-  p
-    Name:
-    input(type='text', name='product[name]', value=product.name)
-  p
-    input(type='submit')
