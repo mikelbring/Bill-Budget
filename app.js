@@ -1,10 +1,10 @@
 var express		= require('express'),
-    sys 		= require('sys'),
+	sys 		= require('sys'),
 	mysql		= require('mysql'),
 	config 		= require('./config').config,
 	dateFormat 	= require('dateformat'),
- 	app 		= module.exports = express.createServer(),
-	db 			= mysql.createClient(config.mysql_information);
+	app 		= module.exports = express.createServer(),
+	db			= mysql.createClient(config.mysql_information);
 
 app.configure(function(){
 	app.use(express.logger());
