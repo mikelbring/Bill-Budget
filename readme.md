@@ -25,4 +25,6 @@ Load the following sql:
 
 Edit the config.js to match your database needs and what port you want.
 
+Run `node app.js`
+
 Then go to http://localhost:4000 (assuming you used port 4000)
